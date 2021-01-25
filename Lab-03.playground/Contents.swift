@@ -208,9 +208,9 @@ areaOfSquare(outerLength: 32, outerWidth: 64, outerCostPerSqFt: 0.10)
 //    For example a 5" radius pie with 3 toppings:
 //    5 * 5 * 3.14 * (0.05 + 0.03 * 3) = 10.99
 
-func makePizza(outerType type:String, outerSize size:Int, outerNumOfToppings numOfToppings:Int) -> (pizza_type:String, pizza_size:Int ,Double){
+func makePizza(outerType type:String, outerSize size:Int, outerNumOfToppings numOfToppings:Int) -> (pizza_type:String, pizza_size:Int, pizza_cost:Double){
     let cost: Double = Double(size) * 0.05 + 0.03 * Double(numOfToppings)
-    return(pizza_type, pizza_size, cost)
+    return(pizza_type, pizza_size, pizza_cost)
 }
 
 print(makePizza(outerType:"cheese", outerSize:10, outerNumOfToppings: 2))
